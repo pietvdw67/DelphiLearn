@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2024/08/05 19:48:46.713.dproj,D:\OneDrive\Documents\RAD Studio\Projects\Project1.dproj=D:\OneDrive\Documents\RAD Studio\Projects\LearnDelphi.dproj</Transaction>
+    <Transaction>2024/08/05 19:48:54.824.pas,D:\OneDrive\Documents\RAD Studio\Projects\Unit1.pas=D:\OneDrive\Documents\RAD Studio\Projects\main_u.pas</Transaction>
+    <Transaction>2024/08/05 19:48:54.824.dfm,D:\OneDrive\Documents\RAD Studio\Projects\Unit1.dfm=D:\OneDrive\Documents\RAD Studio\Projects\main_u.dfm</Transaction>
+    <Transaction>2024/08/05 19:49:37.946.pas,D:\OneDrive\Documents\RAD Studio\Projects\Unit1.pas=D:\OneDrive\Documents\RAD Studio\Projects\array_u.pas</Transaction>
+    <Transaction>2024/08/05 19:49:37.946.dfm,D:\OneDrive\Documents\RAD Studio\Projects\Unit1.dfm=D:\OneDrive\Documents\RAD Studio\Projects\array_u.dfm</Transaction>
+    <Transaction>2024/08/05 19:51:14.230.pas,D:\OneDrive\Documents\RAD Studio\Projects\main_u.pas=D:\OneDrive\Documents\RAD Studio\Projects\LearnDelphi\main_u.pas</Transaction>
+    <Transaction>2024/08/05 19:51:14.230.dfm,D:\OneDrive\Documents\RAD Studio\Projects\main_u.dfm=D:\OneDrive\Documents\RAD Studio\Projects\LearnDelphi\main_u.dfm</Transaction>
+    <Transaction>2024/08/05 19:51:18.717.pas,D:\OneDrive\Documents\RAD Studio\Projects\array_u.pas=D:\OneDrive\Documents\RAD Studio\Projects\LearnDelphi\array_u.pas</Transaction>
+    <Transaction>2024/08/05 19:51:18.717.dfm,D:\OneDrive\Documents\RAD Studio\Projects\array_u.dfm=D:\OneDrive\Documents\RAD Studio\Projects\LearnDelphi\array_u.dfm</Transaction>
+    <Transaction>2024/08/05 19:51:20.317.dproj,D:\OneDrive\Documents\RAD Studio\Projects\LearnDelphi.dproj=D:\OneDrive\Documents\RAD Studio\Projects\LearnDelphi\LearnDelphi.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
