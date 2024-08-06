@@ -44,15 +44,8 @@ var
 
 begin
 
-  cFromCol:= txtFrom.Text[1];
-  cToCol:= txtTo.Text[1];
-  iFromRow:= StrToInt(copy(txtFrom.Text,2));
-  iToRow:= StrToInt(copy(txtTo.Text,2));
+  cFromCol:= StrToChar(copy(txtFrom.Text,1,1));
 
-  arrChessBoard[cToCol,iToRow]:= arrChessBoard[cFromCol,iFromRow];
-  arrChessBoard[cFromCol,iFromRow]:= '';
-
-  drawBoard();
 
 end;
 
@@ -100,26 +93,16 @@ begin
 end;
 
 procedure TfrmArray.btnResetBoardClick(Sender: TObject);
-var
-  repCol: char;
-  repRow: integer;
+
 begin
 
-  for repCol := 'A' to 'H' do
-    begin
-      for repRow := 1 to 8 do
-        begin
-          arrChessBoard[repCol,repRow]:='';
-        end;
-    end;
-
   arrChessBoard['A',1]:='R';
-  arrChessBoard['B',1]:='B';
-  arrChessBoard['C',1]:='Kn';
+  arrChessBoard['B',1]:='Kn';
+  arrChessBoard['C',1]:='B';
   arrChessBoard['D',1]:='Q';
   arrChessBoard['E',1]:='K';
-  arrChessBoard['F',1]:='Kn';
-  arrChessBoard['G',1]:='B';
+  arrChessBoard['F',1]:='B';
+  arrChessBoard['G',1]:='Kn';
   arrChessBoard['H',1]:='R';
   arrChessBoard['A',2]:='P';
   arrChessBoard['B',2]:='P';
@@ -131,12 +114,12 @@ begin
   arrChessBoard['H',2]:='P';
 
   arrChessBoard['A',8]:='R';
-  arrChessBoard['B',8]:='B';
-  arrChessBoard['C',8]:='Kn';
+  arrChessBoard['B',8]:='Kn';
+  arrChessBoard['C',8]:='B';
   arrChessBoard['D',8]:='Q';
   arrChessBoard['E',8]:='K';
-  arrChessBoard['F',8]:='Kn';
-  arrChessBoard['G',8]:='B';
+  arrChessBoard['F',8]:='B';
+  arrChessBoard['G',8]:='Kn';
   arrChessBoard['H',8]:='R';
   arrChessBoard['A',7]:='P';
   arrChessBoard['B',7]:='P';

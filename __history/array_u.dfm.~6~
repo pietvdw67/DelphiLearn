@@ -2,8 +2,8 @@ object frmArray: TfrmArray
   Left = 0
   Top = 0
   Caption = 'Array'
-  ClientHeight = 443
-  ClientWidth = 977
+  ClientHeight = 445
+  ClientWidth = 879
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,20 +13,6 @@ object frmArray: TfrmArray
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object Label1: TLabel
-    Left = 656
-    Top = 189
-    Width = 26
-    Height = 13
-    Caption = 'Move'
-  end
-  object Label2: TLabel
-    Left = 720
-    Top = 211
-    Width = 12
-    Height = 13
-    Caption = 'To'
-  end
   object btnReadScores: TButton
     Left = 199
     Top = 8
@@ -65,28 +51,5 @@ object frmArray: TfrmArray
     Caption = 'Reset Board'
     TabOrder = 3
     OnClick = btnResetBoardClick
-  end
-  object txtFrom: TEdit
-    Left = 656
-    Top = 208
-    Width = 49
-    Height = 21
-    TabOrder = 4
-  end
-  object txtTo: TEdit
-    Left = 752
-    Top = 208
-    Width = 49
-    Height = 21
-    TabOrder = 5
-  end
-  object btnMove: TButton
-    Left = 807
-    Top = 206
-    Width = 75
-    Height = 25
-    Caption = 'Move'
-    TabOrder = 6
-    OnClick = btnMoveClick
   end
 end

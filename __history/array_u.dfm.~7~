@@ -87,6 +87,5 @@ object frmArray: TfrmArray
     Height = 25
     Caption = 'Move'
     TabOrder = 6
-    OnClick = btnMoveClick
   end
 end

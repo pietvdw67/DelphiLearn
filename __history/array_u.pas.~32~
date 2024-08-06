@@ -100,9 +100,7 @@ begin
 end;
 
 procedure TfrmArray.btnResetBoardClick(Sender: TObject);
-var
-  repCol: char;
-  repRow: integer;
+
 begin
 
   for repCol := 'A' to 'H' do

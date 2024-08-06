@@ -100,18 +100,8 @@ begin
 end;
 
 procedure TfrmArray.btnResetBoardClick(Sender: TObject);
-var
-  repCol: char;
-  repRow: integer;
-begin
 
-  for repCol := 'A' to 'H' do
-    begin
-      for repRow := 1 to 8 do
-        begin
-          arrChessBoard[repCol,repRow]:='';
-        end;
-    end;
+begin
 
   arrChessBoard['A',1]:='R';
   arrChessBoard['B',1]:='B';
