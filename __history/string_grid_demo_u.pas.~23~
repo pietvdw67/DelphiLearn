@@ -1,0 +1,71 @@
+unit string_grid_demo_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Grids;
+
+type
+  TfrmStringGridDemo = class(TForm)
+    grid: TStringGrid;
+    btnPopulate: TButton;
+    procedure FormActivate(Sender: TObject);
+    procedure btnPopulateClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    arrStudent: array[0..3,0..2] of String
+  end;
+
+var
+  frmStringGridDemo: TfrmStringGridDemo;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmStringGridDemo.btnPopulateClick(Sender: TObject);
+var
+  r,k: integer;
+
+begin
+  grid.Cells[0,0]:='Naam';
+  grid.cells[1,0]:='Age';
+  grid.Cells[2,0]:='Color';
+
+  for r := 0 to 3 do
+  begin
+    for k := 0 to 2 do
+    begin
+      grid.Cells[k,r+1]:= arrStudent[r,k];
+    end;
+  end;
+
+
+
+end;
+
+procedure TfrmStringGridDemo.FormActivate(Sender: TObject);
+begin
+  arrStudent[0,0]:= 'Kayla';
+  arrStudent[0,1]:= '18';
+  arrStudent[0,2]:= 'Pienk';
+
+  arrStudent[1,0]:= 'Claire';
+  arrStudent[1,1]:= '16';
+  arrStudent[1,2]:= 'Pienk';
+
+  arrStudent[2,0]:= 'Pappa';
+  arrStudent[2,1]:= '46';
+  arrStudent[2,2]:= 'Grys';
+
+  arrStudent[3,0]:= 'Mamma';
+  arrStudent[3,1]:= '82';
+  arrStudent[3,2]:= 'Kapoen';
+
+
+
+end;
+
+end.

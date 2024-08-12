@@ -4,14 +4,12 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs,array_u, StdCtrls,string_grid_demo_u;
+  Dialogs,array_u, StdCtrls;
 
 type
   TfrmMain = class(TForm)
     btnArray: TButton;
-    btnStringGridDemo: TButton;
     procedure btnArrayClick(Sender: TObject);
-    procedure btnStringGridDemoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -28,12 +26,6 @@ implementation
 procedure TfrmMain.btnArrayClick(Sender: TObject);
 begin
   array_u.frmArray.Show();
-
-end;
-
-procedure TfrmMain.btnStringGridDemoClick(Sender: TObject);
-begin
-  frmStringGridDemo.Show();
 
 end;
 

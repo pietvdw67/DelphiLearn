@@ -22,13 +22,4 @@ object frmMain: TfrmMain
     TabOrder = 0
     OnClick = btnArrayClick
   end
-  object btnStringGridDemo: TButton
-    Left = 32
-    Top = 63
-    Width = 105
-    Height = 25
-    Caption = 'String Grid Demo'
-    TabOrder = 1
-    OnClick = btnStringGridDemoClick
-  end
 end

@@ -49,6 +49,9 @@
 			<DCCReference Include="array_u.pas">
 				<Form>frmArray</Form>
 			</DCCReference>
+			<DCCReference Include="string_grid_demo_u.pas">
+				<Form>frmStringGridDemo</Form>
+			</DCCReference>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>

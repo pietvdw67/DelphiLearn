@@ -9,9 +9,7 @@ uses
 type
   TfrmMain = class(TForm)
     btnArray: TButton;
-    btnStringGridDemo: TButton;
     procedure btnArrayClick(Sender: TObject);
-    procedure btnStringGridDemoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -28,12 +26,6 @@ implementation
 procedure TfrmMain.btnArrayClick(Sender: TObject);
 begin
   array_u.frmArray.Show();
-
-end;
-
-procedure TfrmMain.btnStringGridDemoClick(Sender: TObject);
-begin
-  frmStringGridDemo.Show();
 
 end;
 
