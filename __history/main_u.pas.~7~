@@ -13,7 +13,6 @@ type
     brnFormulas: TButton;
     procedure btnArrayClick(Sender: TObject);
     procedure btnStringGridDemoClick(Sender: TObject);
-    procedure brnFormulasClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,12 +25,6 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TfrmMain.brnFormulasClick(Sender: TObject);
-begin
-  frmFormulas.show();
-
-end;
 
 procedure TfrmMain.btnArrayClick(Sender: TObject);
 begin

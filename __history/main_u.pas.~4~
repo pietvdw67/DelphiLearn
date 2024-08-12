@@ -4,16 +4,14 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs,array_u, StdCtrls,string_grid_demo_u,formulas_u;
+  Dialogs,array_u, StdCtrls,string_grid_demo_u;
 
 type
   TfrmMain = class(TForm)
     btnArray: TButton;
     btnStringGridDemo: TButton;
-    brnFormulas: TButton;
     procedure btnArrayClick(Sender: TObject);
     procedure btnStringGridDemoClick(Sender: TObject);
-    procedure brnFormulasClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,12 +24,6 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TfrmMain.brnFormulasClick(Sender: TObject);
-begin
-  frmFormulas.show();
-
-end;
 
 procedure TfrmMain.btnArrayClick(Sender: TObject);
 begin

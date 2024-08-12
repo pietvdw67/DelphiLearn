@@ -10,8 +10,10 @@ type
   TfrmStringGridDemo = class(TForm)
     grid: TStringGrid;
     btnPopulate: TButton;
+    Button1: TButton;
     procedure FormActivate(Sender: TObject);
     procedure btnPopulateClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,9 +32,9 @@ var
   r,k: integer;
 
 begin
-//  grid.Cells[0,0]:='Naam';
-//  grid.cells[1,0]:='Age';
-//  grid.Cells[2,0]:='Color';
+  grid.Cells[0,0]:='Naam';
+  grid.cells[1,0]:='Age';
+  grid.Cells[2,0]:='Color';
 
   for r := 1 to 4 do
   begin
@@ -41,6 +43,18 @@ begin
       grid.Cells[k-1,r]:= arrStudent[r,k];
     end;
   end;
+end;
+
+procedure TfrmStringGridDemo.Button1Click(Sender: TObject);
+var
+  iSpelers: integer;
+  rSpanne,rReserves: real;
+begin
+
+  iSpelers:= 49;
+  rSpanne:= round(49/11,0);
+  ShowMessage( floatToStr(rSpanne));
+
 end;
 
 procedure TfrmStringGridDemo.FormActivate(Sender: TObject);

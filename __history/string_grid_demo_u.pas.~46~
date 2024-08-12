@@ -12,6 +12,7 @@ type
     btnPopulate: TButton;
     procedure FormActivate(Sender: TObject);
     procedure btnPopulateClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,15 +31,15 @@ var
   r,k: integer;
 
 begin
-//  grid.Cells[0,0]:='Naam';
-//  grid.cells[1,0]:='Age';
-//  grid.Cells[2,0]:='Color';
+  grid.Cells[0,0]:='Naam';
+  grid.cells[1,0]:='Age';
+  grid.Cells[2,0]:='Color';
 
   for r := 1 to 4 do
   begin
     for k := 1 to 3 do
     begin
-      grid.Cells[k,r]:= arrStudent[r,k];
+      grid.Cells[k-1,r]:= arrStudent[r,k];
     end;
   end;
 end;

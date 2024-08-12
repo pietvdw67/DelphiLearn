@@ -31,13 +31,4 @@ object frmMain: TfrmMain
     TabOrder = 1
     OnClick = btnStringGridDemoClick
   end
-  object brnFormulas: TButton
-    Left = 32
-    Top = 94
-    Width = 105
-    Height = 25
-    Caption = 'Formulas'
-    TabOrder = 2
-    OnClick = brnFormulasClick
-  end
 end

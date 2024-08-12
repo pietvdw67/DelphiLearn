@@ -5,7 +5,7 @@ uses
   main_u in 'main_u.pas' {frmMain},
   array_u in 'array_u.pas' {frmArray},
   string_grid_demo_u in 'string_grid_demo_u.pas' {frmStringGridDemo},
-  formulas_u in 'formulas_u.pas' {frmFormulas};
+  formulas_u in 'formulas_u.pas' {Formulas};
 
 {$R *.res}
 
@@ -15,6 +15,6 @@ begin
   Application.CreateForm(TfrmMain, frmMain);
   Application.CreateForm(TfrmArray, frmArray);
   Application.CreateForm(TfrmStringGridDemo, frmStringGridDemo);
-  Application.CreateForm(TfrmFormulas, frmFormulas);
+  Application.CreateForm(TFormulas, Formulas);
   Application.Run;
 end.

@@ -38,6 +38,5 @@ object frmMain: TfrmMain
     Height = 25
     Caption = 'Formulas'
     TabOrder = 2
-    OnClick = brnFormulasClick
   end
 end
